@@ -1,0 +1,325 @@
+/* correspomde a la pagina index*/
+body {
+  margin: 0;
+}
+
+#miGranCaja {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/imagenes/fondo/2.jpg);
+  background-size: cover;
+}
+
+.miEncabezado {
+  font-family: "Texturina", serif;
+  color: #4c4a4d;
+  font-weight: bold;
+  font-size: 24px;
+  text-align-last: center;
+  background-image: url(/imagenes/Logo/logo3.jpg);
+  background-size: cover;
+  border: 1px solid white;
+}
+
+/*Aplique gradiente*/
+#Menut {
+  background: radial-gradient(circle, #aadcec, #1e1f1f);
+  height: 100px;
+}
+.miMenu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+.miMenu li {
+  border-right: 1px solid white;
+  text-align: center;
+  width: 20%;
+  font-size: 22px;
+  font-family: "Texturina", serif;
+}
+.miMenu li a {
+  color: white;
+}
+/*Transformacion en menu*/
+.miMenu li a:hover {
+  background-color: #4b9ab4;
+  transform: scale(1, 1);
+}
+
+.miMenu li:last-child {
+  border: 0;
+}
+
+.miSection {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+.miImagen {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.nosotras {
+  font-family: "Texturina", serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.nosotras p {
+  font-family: "Texturina", serif;
+  font-style: italic;
+  line-height: 2;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.miAside {
+  width: 400px;
+  font-family: "Texturina", serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+/* aca agregue Gradiente*/
+footer {
+  background: radial-gradient(circle, #aadcec, #030303);
+  height: 150px;
+}
+footer span {
+  font-family: "Texturina", serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px 20px 0px 20px;
+  padding: 10px;
+  color: white;
+}
+.Whasapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.8;
+}
+/*Corresponde a la pagina cursos*/
+.tituloCurso {
+  font-family: "Texturina", serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+#miCursos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.curso {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(244, 248, 248);
+  width: 350px;
+  height: 650px;
+}
+.curso img {
+  width: 100%;
+  border-radius: 6px;
+}
+.descripcion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.descripcion h2 {
+  margin: 0;
+}
+
+.descripcion p {
+  flex: 1;
+}
+.canasto {
+  width: 100px;
+  background-color: rgb(5, 143, 143);
+  border: black 1px solid;
+  color: rgb(248, 248, 248);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 2px 5px 2px 80px;
+}
+
+/* corresponde a  la pagina Nuestros Proyectos,transformacion*/
+#cajaGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: 300px 300px 300px 300px;
+  grid-template-areas:
+    "cajaUno cajaCuatro cajaCinco"
+    "cajaDos cajaCuatro cajaCinco"
+    "cajaTres cajaCuatro cajaCinco";
+  column-gap: 30px;
+  row-gap: 10px;
+  width: 1200px;
+  margin: 0 auto;
+}
+#cajaUno {
+  grid-area: cajaUno;
+}
+
+#cajaUno img {
+  width: 100%;
+  border: 4px double black;
+  align-self: end;
+}
+#cajaUno :hover {
+  transition: all 1.5s;
+  transform: scale(2, 2);
+}
+#cajaDos {
+  grid-area: cajaDos;
+}
+#cajaDos img {
+  width: 100%;
+  border: 4px double black;
+}
+#cajaDos :hover {
+  transition: all 1.5s;
+  transform: scale(2, 2);
+}
+#cajaTres {
+  grid-area: cajaTres;
+}
+#cajaTres img {
+  width: 100%;
+  border: 4px double black;
+}
+#cajaTres :hover {
+  transition: all 1.5s;
+  transform: scale(2, 2);
+}
+#cajaCuatro {
+  grid-area: cajaCuatro;
+  justify-self: stretch;
+  align-self: center;
+}
+
+#cajaCuatro iframe {
+  border: 4px double black;
+  width: 100%;
+  justify-self: center;
+  height: 400px;
+}
+#cajaCinco {
+  grid-area: cajaCinco;
+}
+#cajaCinco p {
+  justify-self: center;
+  border: 4px double black;
+  width: 100%;
+  font-family: "Texturina", serif;
+  line-height: 2;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bold;
+}
+/*corresponde a la pagin Patrones Gratis*/
+#patrones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: stretch;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+#patrones img {
+  border: 2px solid rgb(48, 47, 47);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  width: 370px;
+  height: 500px;
+}
+
+/* corresponde a la pagina  contacto*/
+form {
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+  margin-bottom: 50px;
+}
+
+form label {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+}
+.formulario {
+  font-family: "Texturina", serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.formulario h2 {
+  font-family: "Texturina", serif;
+  line-height: 2;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+.formulario h5 {
+  font-family: "Texturina", serif;
+  line-height: 2;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
